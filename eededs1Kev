@@ -1,0 +1,4 @@
+local plrs = game:GetService("Players")
+for i, v in pairs(plrs:GetChildren()) do
+game:GetService("ReplicatedStorage").MoneyRequest:FireServer(false, 1000, "Cash", v)
+end
