@@ -32,9 +32,9 @@ local Window = Library.CreateLib("SpezZs", "BloodTheme")
 
   
     --GUI'S
-    local MoneySpawner = Window:NewTab("GUIS")
-    local MoneySpawners = GUIS:NewSection("MoneySelf")
-    local MoneySpawnera = GUIS:NewSection("MoneyAll")
+    local MoneySpawner = Window:NewTab("MoneySpawner")
+    local MoneySpawners = MoneySpawner:NewSection("MoneySelf")
+    local MoneySpawnera = MoneySpawner:NewSection("MoneyAll")
 
     MoneySpawners:NewButton("1kSELF", "Spawn the amount", function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/modderongxmes/eededs/main/sel1Kme'),true))()
